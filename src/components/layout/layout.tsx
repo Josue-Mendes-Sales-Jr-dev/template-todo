@@ -12,7 +12,7 @@ export const Layout=(props:LayoutProps)=>{
     return(
         <>
         <div className=" flex flex-col w-screen min-h-[100vh]">
-            <div className="w-screen bg-blue-500 h-[45vh] z-10 relative">
+            <div className="w-screen bg-blue-600 h-[45vh] z-10 relative">
                 <Image src={wallpaper} alt='wallpaper' 
                 className=" w-[100%] h-[100%] absolute" />
                    <nav className=" absolute left-[20px] sm:left-[150px]  flex items-center text-[1rem] text-green-500 justify-center pt-5">
