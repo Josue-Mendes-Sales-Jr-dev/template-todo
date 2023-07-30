@@ -3,6 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import wallpaper from "../../../public/img/wallpaper.jpg"
 import { Footer } from "../footer"
+import React from "react"
 
 interface LayoutProps{
     className?: string
