@@ -1,15 +1,22 @@
+import React from "react"
 import "tailwindcss/tailwind.css"
 
-export const Cards=()=>{
+interface CardsProps{
+    src: string
+    title: string
+    text?: string
+}
+export const Cards=(props:CardsProps)=>{
     return(
         <>
-         <div className=" w-[22rem] h-[14rem] bg-blue-400">
-            <div className="w-full h-[11rem]">
-            <iframe className={` w-[100%] h-[100%] `} src='https://www.youtube.com/embed/W2QeQ9ZufAk' title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen>
+         <div className="flex sm:flex-col flex-row sm:w-[19rem] w-[90%] sm:h-[14rem] h-[8rem] ">
+            <div className="sm:w-[100%] w-[70%] sm:h-[11rem] ">
+            <iframe className={`rounded-lg hover:rounded-none w-[100%] h-[100%] `} src={props.src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen>
             </iframe>
             </div>
-            <div className="w-[100%] h-[3rem]">
-               
+            <div className="w-[100%] sm:h-[3rem] flex sm:flex-row sm:gap-4 flex-col items-center justify-center ">
+                <p className="text-[1.5rem] "> {props.title}</p>
+                <p className="text-center"> {props.text}</p>
             </div>
          </div>
         

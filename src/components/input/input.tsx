@@ -1,6 +1,6 @@
 
 interface InputProps{
-    type?:string
+    type:string
     placehoder?:string
     className?:string
     onChange?: (e:any)=> void
